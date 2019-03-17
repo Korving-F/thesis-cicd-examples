@@ -4,7 +4,6 @@ dist: xenial
 
 env:
   global:
-    - COVERAGE_FILE="/tmp/.coverage"
     - TEST_NAME="thesis-cicd-poc"
 
 jobs:
