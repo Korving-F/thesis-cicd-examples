@@ -11,7 +11,7 @@ env:
 
 jobs:
   include:
-    - stage: build
+    - stage: build-run-test
       name: "Installing dependencies and building docker image"
       script:
         - sudo apt-get update -qy
@@ -19,14 +19,14 @@ jobs:
         - sudo -H pip3 install pytest pytest-cov codecov
         - docker build -t $TEST_NAME .
 
-    - stage: run
+    - stage: build-run-test
       name: "Running application in docker"
       script:
         - docker images
         - docker ps
         - docker run -dt -p 8282:80 -v $PWD:/tmp/ --name travisCICDContainer $TEST_NAME
 
-    - stage: test
+    - stage: build-run-test
       name: "Running naive functional tests"
       script:
         - pytest --cov=example/ tests/
@@ -44,8 +44,7 @@ jobs:
         - echo "Deploying..."
 
 stages:
-  - build
-  - run
+  - build-run-test
   - test
   - name: deploy
     if: branch = master
