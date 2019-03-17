@@ -21,7 +21,7 @@ jobs:
         - docker images
         - docker ps
         - docker run -dt -p 8282:80 -v $PWD:/tmp/ --name travisCICDContainer $TEST_NAME
-        - pytest --cov=example/ tests/
+        - pytest tests/
 
     - stage: test
       name: "Running functional tests with fixtures"
