@@ -5,8 +5,9 @@ python:
 dist: xenial
 
 env:
-  - COVERAGE_FILE=/tmp/.coverage
-  - TEST_NAME=thesis-cicd-poc
+  global:
+    - COVERAGE_FILE="/tmp/.coverage"
+    - TEST_NAME="thesis-cicd-poc"
 
 jobs:
   include:

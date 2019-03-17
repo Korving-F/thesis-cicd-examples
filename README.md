@@ -1,4 +1,4 @@
-## Example-App for CI comparative analysis
+# Example-App for CI comparative analysis
 
 This app and accompanying files were developed as part of the author's graduating thesis at the Estonian IT-College / TTÜ. 
 It is partly based on a Flask example application provided on the official documentation page and functions for illustrative purposes.
@@ -14,12 +14,12 @@ It contains the following:
 * Pipeline definition files for subset of selected CI tools
 
 
-# Test results / Badges
+## Test results / Badges
 
 * CircleCI: 
 
 * TravisCI: [![Build Status](https://travis-ci.org/Korving-F/thesis-cicd-examples.svg?branch=master)](https://travis-ci.org/Korving-F/thesis-cicd-examples)
 
-# Sources
+## Sources
 * https://flask-restful.readthedocs.io/en/latest/quickstart.html#full-example
 * https://docs.pytest.org/en/latest/example/simple.html
