@@ -40,3 +40,8 @@ stages:
   - test
   - name: deploy
     if: branch = master
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
