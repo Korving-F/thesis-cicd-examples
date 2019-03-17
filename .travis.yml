@@ -1,0 +1,46 @@
+language: python
+dist: xenial
+
+env:
+  - COVERAGE_FILE=/tmp/.coverage
+  - TEST_NAME=thesis-cicd-poc:$TRAVIS_COMMIT
+
+jobs:
+  include:
+    - stage: build
+      name: "Installing dependencies and building docker image"
+      script:
+        - sudo apt-get update -qy
+        - sudo apt-get install -y python3-dev python3-pip
+        - sudo pip3 install pytest pytest-cov codecov
+        - docker build -t $TEST_NAME .
+
+    - stage: run
+      name: "Running application in docker"
+      script:
+        - docker run -dt -p 8282:80 -v $PWD:/tmp/ --name travisCICDContainer $TEST_NAME
+
+    - stage: test
+      name: "Running naive functional tests"
+      script:
+        - pytest --cov=example/ tests/
+
+    - stage: test
+      name: "Running functional tests with fixtures"
+      script:
+        - pytest --cov-report term --cov-branch --cov=example/ tests2/
+      after_success:
+        - codecov
+
+    - stage: deploy
+      name: "Simulating a deployment step"
+      script:
+        - echo "Deploying..."
+
+
+stages:
+  - build
+  - run
+  - test
+  - name: deploy
+    if: branch = master
