@@ -18,7 +18,7 @@ It contains the following:
 
 * CircleCI: [![CircleCI](https://circleci.com/gh/Korving-F/thesis-cicd-examples/tree/master.svg?style=svg)](https://circleci.com/gh/Korving-F/thesis-cicd-examples/tree/master)
 
-* TravisCI: [![Build Status](https://travis-ci.org/Korving-F/thesis-cicd-examples.svg?branch=master)](https://travis-ci.org/Korving-F/thesis-cicd-examples)
+* TravisCI: [![Build Status](https://travis-ci.org/Korving-F/thesis-cicd-examples.svg?branch=master)](https://travis-ci.org/Korving-F/thesis-cicd-examples) [![codecov](https://codecov.io/gh/Korving-F/thesis-cicd-examples/branch/master/graph/badge.svg)](https://codecov.io/gh/Korving-F/thesis-cicd-examples)
 
 ## Sources
 * https://flask-restful.readthedocs.io/en/latest/quickstart.html#full-example
