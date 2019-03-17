@@ -18,7 +18,7 @@ It contains the following:
 
 * CircleCI: 
 
-* TravisCI: 
+* TravisCI: [![Build Status](https://travis-ci.org/Korving-F/thesis-cicd-examples.svg?branch=master)](https://travis-ci.org/Korving-F/thesis-cicd-examples)
 
 # Sources
 * https://flask-restful.readthedocs.io/en/latest/quickstart.html#full-example

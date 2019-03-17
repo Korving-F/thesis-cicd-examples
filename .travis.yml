@@ -13,6 +13,10 @@ jobs:
     - stage: build
       name: "Installing dependencies and building docker image"
       script:
+        - pwd
+        - ls -lah
+        - echo $TEST_NAME
+        - echo TEST_NAME
         - sudo apt-get update -qy
         - sudo apt-get install -y python3-dev python3-pip
         - sudo -H pip3 install pytest pytest-cov codecov
