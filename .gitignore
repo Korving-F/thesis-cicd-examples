@@ -1,0 +1,7 @@
+# emacs tempfile
+*~
+
+# Python specific
+__pycache__/
+.#*
+*.py#
