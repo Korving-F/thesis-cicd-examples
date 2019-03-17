@@ -16,7 +16,7 @@ It contains the following:
 
 ## Test results / Badges
 
-* CircleCI: 
+* CircleCI: [![CircleCI](https://circleci.com/gh/Korving-F/thesis-cicd-examples/tree/master.svg?style=svg)](https://circleci.com/gh/Korving-F/thesis-cicd-examples/tree/master)
 
 * TravisCI: [![Build Status](https://travis-ci.org/Korving-F/thesis-cicd-examples.svg?branch=master)](https://travis-ci.org/Korving-F/thesis-cicd-examples)
 
