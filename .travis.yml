@@ -1,7 +1,5 @@
-language: python
-python:
-  - "3.5"
-
+language: generic
+cache: pip
 dist: xenial
 
 env:
@@ -16,7 +14,7 @@ jobs:
       script:
         - sudo apt-get update -qy
         - sudo apt-get install -y python3-dev python3-pip
-        - sudo -H pip install pytest
+        - sudo -H pip3 install pytest
         - docker build -t $TEST_NAME .
         - docker run -dt -p 8282:80 -v $PWD:/tmp/ --name travisCICDContainer $TEST_NAME
         - pytest tests/
@@ -26,7 +24,7 @@ jobs:
       script:
         - sudo apt-get update -qy
         - sudo apt-get install -y python3-dev python3-pip
-        - sudo -H pip install pytest-cov pytest codecov
+        - sudo -H pip3 install -U pytest-cov pytest codecov
         - pytest tests2/
         - pytest --cov-report term --cov-branch --cov=example/ tests2/
       after_success:
