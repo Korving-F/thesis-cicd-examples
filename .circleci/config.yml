@@ -52,8 +52,6 @@ jobs:
     machine:
       image: ubuntu-1604:201903-01
     steps:
-      - restore_cache:
-          key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
       - checkout
       - run:
           name: "Test command"
@@ -66,7 +64,7 @@ jobs:
       - checkout
       - setup_remote_docker:
           docker_layer_caching: true
-      - run: docker build -t $TEST_NAME .
+      - run: docker build .
       - run:
           name: Dummy deploy somewhere
           command: |
