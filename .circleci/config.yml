@@ -1,8 +1,8 @@
 version: 2.0
 jobs:
  build:
-   docker:
-     - image: alpine:3.7
+   machine:
+     - image: circleci/classic:latest
    steps:
      - run:
          name: The First Step
