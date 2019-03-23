@@ -23,3 +23,4 @@ It contains the following:
 ## Sources
 * https://flask-restful.readthedocs.io/en/latest/quickstart.html#full-example
 * https://docs.pytest.org/en/latest/example/simple.html
+* Run builds using local config: https://youtu.be/HB5DehCufG0
