@@ -48,15 +48,26 @@ jobs:
           name: Running Tests
           command: |
             pytest tests/
+
   build-fixtures:
     machine:
       image: ubuntu-1604:201903-01
     steps:
       - checkout
       - run:
-          name: "Test command"
+          name: Installing dependencies
           command: |
-            echo "Test"
+            sudo apt-get update -qy
+            sudo apt-get install -y python3-dev python3-pip
+            sudo -H pip3 install -U pytest-cov pytest codecov
+            sudo -H pip3 install -r requirements.txt
+      - run:
+          name: Running tests using fixtures
+          command: |
+            pytest --junitxml=$PWD/test-results/test-results.xml --cov-report term --cov-branch --cov=example/ tests2/
+      - store_test_results:
+          path: test-results
+
   deploy:
     docker:
       - image: circleci/python:3.5

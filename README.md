@@ -1,9 +1,9 @@
 # Example-App for CI comparative analysis
 
-This app and accompanying files were developed as part of the author's graduating thesis at the Estonian IT-College / TTÜ. 
+This app and accompanying files were developed as part of the author's graduating thesis at the Estonian IT-College / TTÜ.
 It is partly based on a Flask example application provided on the official documentation page and functions for illustrative purposes.
 
-This is the public version of this repository with links to CI tools that have been set up on dedicated machines. 
+This is the public version of this repository with links to CI tools that have been set up on dedicated machines.
 There is a private version available as well that includes similiar results for tools like Jenkins, GitlabCI, TeamCity and integration with OpenCov.
 
 It contains the following:
@@ -23,4 +23,4 @@ It contains the following:
 ## Sources
 * https://flask-restful.readthedocs.io/en/latest/quickstart.html#full-example
 * https://docs.pytest.org/en/latest/example/simple.html
-* Run builds using local config: https://youtu.be/HB5DehCufG0
+* Run build steps through CircleCI API calls: https://circleci.com/docs/2.0/api-job-trigger/
