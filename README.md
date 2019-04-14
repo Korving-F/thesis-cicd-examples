@@ -16,15 +16,13 @@ It contains the following:
 
 ## Test results / Badges
 
-* CircleCI: [![CircleCI](https://circleci.com/gh/Korving-F/thesis-cicd-examples/tree/master.svg?style=svg)](https://circleci.com/gh/Korving-F/thesis-cicd-examples/tree/master)
+* [CircleCI](https://circleci.com): [![CircleCI](https://circleci.com/gh/Korving-F/thesis-cicd-examples/tree/master.svg?style=svg)](https://circleci.com/gh/Korving-F/thesis-cicd-examples/tree/master)
 
-* TravisCI: [![Build Status](https://travis-ci.org/Korving-F/thesis-cicd-examples.svg?branch=master)](https://travis-ci.org/Korving-F/thesis-cicd-examples) [![codecov](https://codecov.io/gh/Korving-F/thesis-cicd-examples/branch/master/graph/badge.svg)](https://codecov.io/gh/Korving-F/thesis-cicd-examples)
+* [TravisCI](https://travis-ci.org): [![Build Status](https://travis-ci.org/Korving-F/thesis-cicd-examples.svg?branch=master)](https://travis-ci.org/Korving-F/thesis-cicd-examples) [![codecov](https://codecov.io/gh/Korving-F/thesis-cicd-examples/branch/master/graph/badge.svg)](https://codecov.io/gh/Korving-F/thesis-cicd-examples)
 
-* GitlabCI, Jenkins and TeamCity badges for privately hosted CI/CD servers. Coverage report was uploaded to OpenCov. 
-Integration between SonarQube, bandit, pytest, pylint and a slightly older version of this repository's code was setup, represented by the QualityGate badge.
-
-<br>
-<img src="https://raw.githubusercontent.com/Korving-F/thesis-cicd-examples/master/images/sonarqube-badge.png" alt="Badges and SonarQube Integration" height="50%" width="50%">
+* [GitlabCI](https://about.gitlab.com/product/continuous-integration/), [Jenkins](http://jenkins.io) and [TeamCity](https://www.jetbrains.com/teamcity/) badges for privately hosted CI/CD servers. Coverage report was uploaded to privately hosted [OpenCov](https://github.com/danhper/opencov). 
+Integration between [SonarQube](https://www.sonarqube.org/), [bandit](https://github.com/PyCQA/bandit), [pytest-cov](https://pytest-cov.readthedocs.io/en/latest/), [pylint](https://www.pylint.org) and a slightly older version of this repository's code was setup, represented by the QualityGate badge.
+  ![](https://raw.githubusercontent.com/Korving-F/thesis-cicd-examples/master/images/sonarqube-badge.png | width=500)
 
 ## Sources
 * https://flask-restful.readthedocs.io/en/latest/quickstart.html#full-example
