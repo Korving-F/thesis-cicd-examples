@@ -22,7 +22,8 @@ It contains the following:
 
 * [GitlabCI](https://about.gitlab.com/product/continuous-integration/), [Jenkins](http://jenkins.io) and [TeamCity](https://www.jetbrains.com/teamcity/) badges for privately hosted CI/CD servers. Coverage report was uploaded to privately hosted [OpenCov](https://github.com/danhper/opencov). 
 Integration between [SonarQube](https://www.sonarqube.org/), [bandit](https://github.com/PyCQA/bandit), [pytest-cov](https://pytest-cov.readthedocs.io/en/latest/), [pylint](https://www.pylint.org) and a slightly older version of this repository's code was setup, represented by the QualityGate badge.
-  ![](https://raw.githubusercontent.com/Korving-F/thesis-cicd-examples/master/images/sonarqube-badge.png | width=500)
+  <br>
+  <img src="https://raw.githubusercontent.com/Korving-F/thesis-cicd-examples/master/images/sonarqube-badge.png" alt="Badges and SonarQube Integration" height="50%" width="50%">
 
 ## Sources
 * https://flask-restful.readthedocs.io/en/latest/quickstart.html#full-example
